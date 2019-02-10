@@ -8,7 +8,6 @@
 	session_start();
 
 	Router::setGet($_GET);
-	$_SESSION['logged'] = false;
 	$_SESSION['logged'] = (isset($_SESSION['logged'])) ? $_SESSION['logged'] : false;
 
 	if ($_SESSION['logged']) {
@@ -17,7 +16,7 @@
 	}
 	if (!empty(Router::getController()) && 
 		!empty(Router::getMethod()) && 
-		Router::getController() != "Main" && 
+		Router::getController() != "MainController" && 
 		Router::getMethod() != "index") {
 		$controllerName = Router::getController();
 
