@@ -17,8 +17,12 @@ class Biblio {
 		if (!empty(self::$sucesso))
 			$_SESSION['sucesso'] = self::$sucesso;
 
+		if ($url == '/') {
+			$url .= ROOTNAME."/public/";
+		}
 		?>
 		<script type="text/javascript">
+			document.location = '';
 			location.href = '<?=$url?>';
 		</script>
 		<?php
