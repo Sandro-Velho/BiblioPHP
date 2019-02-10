@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'RealityHyper';
+    src: url('../fonts/Reality_Hyper_Regular.ttf');
+}
+body.homepage {
+	background-color: #eee;
+}
+.homepage ul ul {
+	margin-left: 50px;
+}
+.biblio-font {
+	font-family: 'RealityHyper'!important;
+}
